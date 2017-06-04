@@ -11,7 +11,7 @@
 		141E65E61EDE4D3400AA3A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141E65E41EDE4D3400AA3A32 /* Main.storyboard */; };
 		141E65E81EDE4D3400AA3A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141E65E71EDE4D3400AA3A32 /* Assets.xcassets */; };
 		141E65EB1EDE4D3400AA3A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141E65E91EDE4D3400AA3A32 /* LaunchScreen.storyboard */; };
-		141E65F31EDE4D7700AA3A32 /* LoginInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E65F21EDE4D7700AA3A32 /* LoginInViewController.swift */; };
+		141E65F31EDE4D7700AA3A32 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E65F21EDE4D7700AA3A32 /* LoginViewController.swift */; };
 		141E65F61EDE650D00AA3A32 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E65F51EDE650D00AA3A32 /* IQKeyboardManagerSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +22,7 @@
 		141E65E71EDE4D3400AA3A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		141E65EA1EDE4D3400AA3A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		141E65EC1EDE4D3400AA3A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		141E65F21EDE4D7700AA3A32 /* LoginInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInViewController.swift; sourceTree = "<group>"; };
+		141E65F21EDE4D7700AA3A32 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		141E65F51EDE650D00AA3A32 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 				141E65E71EDE4D3400AA3A32 /* Assets.xcassets */,
 				141E65E91EDE4D3400AA3A32 /* LaunchScreen.storyboard */,
 				141E65EC1EDE4D3400AA3A32 /* Info.plist */,
-				141E65F21EDE4D7700AA3A32 /* LoginInViewController.swift */,
+				141E65F21EDE4D7700AA3A32 /* LoginViewController.swift */,
 			);
 			path = TweetRead;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				141E65E11EDE4D3400AA3A32 /* AppDelegate.swift in Sources */,
-				141E65F31EDE4D7700AA3A32 /* LoginInViewController.swift in Sources */,
+				141E65F31EDE4D7700AA3A32 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +340,7 @@
 				141E65F11EDE4D3400AA3A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
