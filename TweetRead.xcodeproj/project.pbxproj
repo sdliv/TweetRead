@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		141E65E11EDE4D3400AA3A32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E65E01EDE4D3400AA3A32 /* AppDelegate.swift */; };
-		141E65E31EDE4D3400AA3A32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E65E21EDE4D3400AA3A32 /* ViewController.swift */; };
 		141E65E61EDE4D3400AA3A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141E65E41EDE4D3400AA3A32 /* Main.storyboard */; };
 		141E65E81EDE4D3400AA3A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141E65E71EDE4D3400AA3A32 /* Assets.xcassets */; };
 		141E65EB1EDE4D3400AA3A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141E65E91EDE4D3400AA3A32 /* LaunchScreen.storyboard */; };
+		141E65F31EDE4D7700AA3A32 /* LoginInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E65F21EDE4D7700AA3A32 /* LoginInViewController.swift */; };
+		141E65F61EDE650D00AA3A32 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E65F51EDE650D00AA3A32 /* IQKeyboardManagerSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		141E65DD1EDE4D3400AA3A32 /* TweetRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		141E65E01EDE4D3400AA3A32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		141E65E21EDE4D3400AA3A32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		141E65E51EDE4D3400AA3A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		141E65E71EDE4D3400AA3A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		141E65EA1EDE4D3400AA3A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		141E65EC1EDE4D3400AA3A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		141E65F21EDE4D7700AA3A32 /* LoginInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInViewController.swift; sourceTree = "<group>"; };
+		141E65F51EDE650D00AA3A32 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141E65F61EDE650D00AA3A32 /* IQKeyboardManagerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				141E65DF1EDE4D3400AA3A32 /* TweetRead */,
 				141E65DE1EDE4D3400AA3A32 /* Products */,
+				141E65F41EDE650C00AA3A32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +59,21 @@
 			isa = PBXGroup;
 			children = (
 				141E65E01EDE4D3400AA3A32 /* AppDelegate.swift */,
-				141E65E21EDE4D3400AA3A32 /* ViewController.swift */,
 				141E65E41EDE4D3400AA3A32 /* Main.storyboard */,
 				141E65E71EDE4D3400AA3A32 /* Assets.xcassets */,
 				141E65E91EDE4D3400AA3A32 /* LaunchScreen.storyboard */,
 				141E65EC1EDE4D3400AA3A32 /* Info.plist */,
+				141E65F21EDE4D7700AA3A32 /* LoginInViewController.swift */,
 			);
 			path = TweetRead;
+			sourceTree = "<group>";
+		};
+		141E65F41EDE650C00AA3A32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				141E65F51EDE650D00AA3A32 /* IQKeyboardManagerSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +86,7 @@
 				141E65D91EDE4D3400AA3A32 /* Sources */,
 				141E65DA1EDE4D3400AA3A32 /* Frameworks */,
 				141E65DB1EDE4D3400AA3A32 /* Resources */,
+				141E65F71EDE654200AA3A32 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,13 +145,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		141E65F71EDE654200AA3A32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		141E65D91EDE4D3400AA3A32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				141E65E31EDE4D3400AA3A32 /* ViewController.swift in Sources */,
 				141E65E11EDE4D3400AA3A32 /* AppDelegate.swift in Sources */,
+				141E65F31EDE4D7700AA3A32 /* LoginInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +292,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VEM8YS6H27;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TweetRead/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sean.TweetRead;
@@ -275,6 +309,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VEM8YS6H27;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TweetRead/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sean.TweetRead;
