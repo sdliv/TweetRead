@@ -9,7 +9,20 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    
+    @IBOutlet weak var twitterHandleTextField: UITextField!
 
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    
+    
+    @IBAction func loginButtonAction(_ sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
